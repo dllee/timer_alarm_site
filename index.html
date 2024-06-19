@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="k37rrOMk-rD6zAyJZWyFLEagY_v6TiZPYxDfz7mZGpU">
+    <title>Timer & Alarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showCurrentTime()">
+    <div class="container">
+        <h1>Timer & Alarm</h1>
+        <div>
+            <label for="timeUnit">Time Unit:</label>
+            <select id="timeUnit">
+                <option value="seconds">Seconds</option>
+                <option value="minutes">Minutes</option>
+            </select>
+            <label for="timeInput">Set Time:</label>
+            <input type="number" id="timeInput" min="1">
+            <button onclick="startTimer()">Start Timer</button>
+        </div>
+        <div>
+            <p id="timerDisplay">0</p>
+        </div>
+        <div>
+            <label for="alarmTime">Set Alarm Time (HH:MM):</label>
+            <input type="time" id="alarmTime">
+            <button onclick="setAlarm()">Set Alarm</button>
+        </div>
+        <div>
+            <p id="alarmDisplay">No Alarm Set</p>
+        </div>
+        <div>
+            <p>Current Time: <span id="currentTime"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

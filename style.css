@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    text-align: center;
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input, button, select {
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+}
+#timerDisplay {
+    font-size: 3em;
+    font-weight: bold;
+    color: red;
+}
+#currentTime {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 1em;
+    }
+}
